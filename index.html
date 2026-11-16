@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenly | Small Habits, Greener Future</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-content">
+            <div class="brand">
+                <div class="brand-icon"><img src="greenly-logo.png" alt="Greenly leaf logo"></div>
+                <div>
+                    <h1>Greenly</h1>
+                    <p>Small habits, greener future.</p>
+                </div>
+            </div>
+            <a href="#habits">My Habits</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to Greenly! 🌍</h2>
+            <p>Build simple habits and make a difference for the planet.</p>
+        </section>
+
+        <section class="summary">
+            <div class="summary-card">
+                <p>Today's Habits</p>
+                <h3 id="total-count">5</h3>
+                <span>Daily activities</span>
+            </div>
+            <div class="summary-card">
+                <p>Completed</p>
+                <h3 id="completed-count">0</h3>
+                <span>Habits completed</span>
+            </div>
+            <div class="summary-card">
+                <p>Remaining</p>
+                <h3 id="remaining-count">5</h3>
+                <span>Habits to go</span>
+            </div>
+            <div class="summary-card">
+                <p>Your Progress</p>
+                <h3 id="percentage-count">0%</h3>
+                <span>Today's progress</span>
+            </div>
+        </section>
+
+        <div class="dashboard">
+            <div class="left-column">
+                <section class="habits-section" id="habits">
+                    <h2>Today's Green Habits</h2>
+                    <p class="section-note">Choose the activities you have completed today.</p>
+
+                    <div class="habit-list">
+                        <label class="habit">
+                            <span class="habit-icon">💧</span>
+                            <span class="habit-name">Use a reusable water bottle</span>
+                            <input type="checkbox" class="habit-checkbox">
+                        </label>
+
+                        <label class="habit">
+                            <span class="habit-icon">💡</span>
+                            <span class="habit-name">Switch off unnecessary lights</span>
+                            <input type="checkbox" class="habit-checkbox">
+                        </label>
+
+                        <label class="habit">
+                            <span class="habit-icon">♻️</span>
+                            <span class="habit-name">Avoid single-use plastic</span>
+                            <input type="checkbox" class="habit-checkbox">
+                        </label>
+
+                        <label class="habit">
+                            <span class="habit-icon">🚌</span>
+                            <span class="habit-name">Use public transportation</span>
+                            <input type="checkbox" class="habit-checkbox">
+                        </label>
+
+                        <label class="habit">
+                            <span class="habit-icon">🌿</span>
+                            <span class="habit-name">Separate wet and dry waste</span>
+                            <input type="checkbox" class="habit-checkbox">
+                        </label>
+                    </div>
+                </section>
+
+                <section class="progress-section">
+                    <div class="section-heading">
+                        <h2>Daily Progress</h2>
+                        <span id="progress-percent">0%</span>
+                    </div>
+                    <p id="progress-text">0 out of 5 habits completed</p>
+                    <div class="progress-background">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <button id="reset-button" type="button">Reset today's progress</button>
+                </section>
+            </div>
+
+            <aside class="right-column">
+                <section class="tip-section">
+                    <h2> Tip of the Day</h2>
+                    <p>Carry a reusable bag when shopping to reduce single-use plastic waste.</p>
+                </section>
+
+                <section class="achievement-section">
+                    <h2> Daily Milestones</h2>
+                    <div class="achievement">
+                        <span>🌱</span>
+                        <div>
+                            <strong>First Step</strong>
+                            <p>Complete your first green habit.</p>
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <span>🌳</span>
+                        <div>
+                            <strong>Halfway There</strong>
+                            <p>Complete at least half of today's habits.</p>
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <span>🌍</span>
+                        <div>
+                            <strong>Green Champion</strong>
+                            <p>Complete all five daily habits.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sdg-section">
+                    <h2>Our Impact</h2>
+                    <p><strong>SDG 11</strong> – Sustainable Cities and Communities</p>
+                    <p><strong>SDG 13</strong> – Climate Action</p>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>Every small step makes a difference. 🌿</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
